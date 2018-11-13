@@ -1,4 +1,4 @@
-[{'expocode': '90MD46_1', 'date': '2003-03-18', 'summary': 'CTD files unencrypted to make exchange and netCDF'},
+{{'expocode': '90MD46_1', 'date': '2003-03-18', 'summary': 'CTD files unencrypted to make exchange and netCDF'},
 {'expocode': '90MD46_1', 'date': '2002-05-01', 'summary': 'CTD encrypted and NONPUB. No BOT or info on if taken. No DOC. SUM is ok'},
 {'expocode': '90MD46_1', 'date': '2002-04-03', 'summary': 'Reformatted data online'},
 {'expocode': '90MD46_1', 'date': '2001-03-26', 'summary': 'Expocodes Updated'},
@@ -10219,4 +10219,4 @@
 {'expocode': '49RY20120726', 'date': '2013-12-05', 'summary': 'to go online'},
 {'expocode': '49UP20160703', 'date': '2018-11-01', 'summary': 'Update CTD files from "As Received" to "Dataset"'},
 {'expocode': '096U20180111', 'date': '2018-11-07', 'summary': 'Process CTD data from As Received into Dataset'},
-{'expocode': '096U20180111', 'date': '2018-10-09', 'summary': 'ExpoCode change'}]
+{'expocode': '096U20180111', 'date': '2018-10-09', 'summary': 'ExpoCode change'}}
