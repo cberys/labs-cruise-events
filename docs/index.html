@@ -35,9 +35,9 @@
 /* search function*/
 $.fn.dataTable.ext.search.push(
     function( settings, data, dataIndex ) {
-        var min = parseInt( $('#min').val(), 10 );
-        var max = parseInt( $('#max').val(), 10 );
-        var tdate = parseFloat( data[1] ) || 0; // use data for the date column
+        var min = Date.parse( $('#min').val(), 10 );
+        var max = Date.parse( $('#max').val(), 10 );
+        var tdate = Date.parse( data[1] ) || 0; // use data for the date column
  
         if ( ( isNaN( min ) && isNaN( max ) ) ||
              ( isNaN( min ) && tdate <= max ) ||
@@ -65,7 +65,13 @@ $(document).ready(function() {
     dom: 'Bfrtip',
     buttons: [
         'copy', 'csv', 'excel', 'pdf', 'print'
-        ]
+        ],
+    columnDefs: [
+        {   
+        type: "datetime",
+        targets: 1
+        }
+    ]
     });
     // Event listener to the two range filtering inputs to redraw on input
     $('#min, #max').keyup( function() {
